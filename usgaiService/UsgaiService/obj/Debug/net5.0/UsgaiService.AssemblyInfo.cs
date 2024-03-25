@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsgaiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f2ce63be2da869223a058eb7144e5db67eb5ddb")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsgaiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsgaiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
