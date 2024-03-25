@@ -19,5 +19,10 @@ namespace UsgaiService.Controllers.Chiikawa
         {
             return Content("Hello Usagi!");
         }
+        [HttpPost]
+        public ActionResult Query() 
+        {
+            return Content("Hello Chiikawa!");
+        }
     }
 }
