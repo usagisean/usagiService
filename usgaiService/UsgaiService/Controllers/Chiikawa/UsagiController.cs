@@ -24,5 +24,10 @@ namespace UsgaiService.Controllers.Chiikawa
         {
             return Content("Hello Chiikawa!");
         }
+        [HttpPost]
+        public bool Insert(string request) 
+        {
+            return true;
+        }
     }
 }
