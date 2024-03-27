@@ -9,14 +9,14 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["UsgaiService.csproj", "."]
-RUN dotnet restore "UsgaiService.csproj"
+RUN dotnet restore "./UsgaiService.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "UsgaiService.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./UsgaiService.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "UsgaiService.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./UsgaiService.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
